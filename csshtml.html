@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SHOPPING CART</title>
+  <link rel="icon" type="image/x-icon" href="IMAGES/cart.png">
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+  .shop
+  {
+    padding-top: 20px;
+    text-align: center;
+    height: 150px;
+    width: 960px;
+   background-image:linear-gradient(to bottom right, rgb(0, 140, 255),rgb(221, 0, 255),rgb(0,140,255));
+  }
+  #cart
+  {
+    height: 80px;
+    width: 80px;
+    
+  }
+
+  #bankInfo > img
+  {
+    width: 30px;
+
+
+  }
+  
+  .carousel-inner
+  {
+    background-image:linear-gradient(to bottom right, rgb(0, 140, 255),rgb(221, 0, 255),rgb(0,140,255));
+    height:560px;
+    padding:20px;
+    box-sizing:border-box;
+    border:2px solid rgb(200, 255, 0);
+    width: 960px;
+    text-align: center;
+  }
+  .carousel-item{
+    
+    text-align:center;
+  }
+  .carousel-item img {
+    width:450px;
+    height: 250px;
+    object-fit:Cover;
+    margin-top:10px;
+  }
+body {
+
+  background-image:url(IMAGES/background.jpeg);
+  background-size: cover;                  
+  background-repeat: no-repeat;            
+  height: 880px;     
+  object-fit: cover;
+
+  
+}
+#flexOutput
+{
+	padding:0px;
+}
+
+#flexContainer
+{
+	height:400px;
+	overflow-y:auto;
+	position:fixed;
+	top:0px;
+	right:10px;
+	display:flex;
+	flex-direction:column;
+	width:340px;
+	padding:0px;
+	box-sizing:border-box;
+	z-index:4;
+	
+}
+
+#flexContainer H2
+{
+	align-self:flex-start;
+	color:red;
+	margin:0px;
+	padding:0px;
+	width:320px;
+	
+}
+
+#flexContainer div
+{
+	width:320px;
+	border:1px solid red;
+	border-radius:3%;
+	background-image:linear-gradient(to right bottom,orange,yellow);
+	height:160px;
+	padding:20px;
+	box-sizing:border-box;
+	margin:0px;
+  
+	
+}
+
+#flexContainer hr
+{
+	margin:0px;
+	padding:0px;
+}
+
+#flexContainer button
+{
+	float:right;
+	margin:auto 5px auto auto;
+}
+
+#flexContainer #buttons
+{
+	padding:0px;
+	height:auto;
+}
+#finalBill
+
+{
+width: 600px;
+height: 700px;
+display: none;
+top: 50px;
+left: 400px;
+overflow-y: auto;
+position: fixed;
+padding:0px;
+
+
+}
+#finalBill #billTable
+{
+  background-image:linear-gradient(to bottom right, rgb(255, 0, 0),rgb(242, 255, 0),rgb(255, 0, 0));
+  width:600px;
+  height:400px;
+  overflow-y:auto;
+  box-sizing:border-box;
+}
+#finalBill table
+{
+width: 480px;
+margin:auto;
+
+}
+#finalBill th
+{
+width: 140px;
+color: aliceblue;
+text-align: center;
+}
+#finalBill td
+{
+  width: 113px;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <center>
+  <div class="shop">
+   <h1><img id="cart"  src="IMAGES/cart.png"></h1> 
+    <h2>SHOPPING CART</h2>
+  </div> 
+  </center>
+
+
+
+<nav class="navbar navbar-expand-md bg-info navbar-dark" style="width: 960px;margin: auto;" >
+  <a class="navbar-brand" href="#">SHOPPING CART</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"role="button" onclick="displayItems(1)"> HOME APPLIANCE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"role="button" onclick="displayItems(2)">MENS WEAR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"role="button" onclick="displayItems(3)">WOMENS WEAR</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#"role="button" onclick="displayItems(4)">FOOD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"role="button" onclick="displayItems(5)">BOOKS</a>
+      </li>   
+    </ul>
+  </div>  
+</nav>
+
+<div class="myRow"style="width: 960px;margin: auto;">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="IMAGES/ceiling fan.webp" alt="ceiling fan" >
+      <img src="IMAGES/Electric Cooker.webp" alt="cooker"><br>
+      <img src="IMAGES/iron box.png" alt="iron box">
+      <img src="IMAGES/Vacuum Cleaner.jpg" alt="vaccum cleaner">
+    
+    </div>
+    <div class="carousel-item">
+      <img src="IMAGES/mens full hand t shirt.webp" alt="mens full hand t shirt" >
+      <img src="IMAGES/mens jacket.avif" alt="mens jacket"><br>
+      <img src="IMAGES/mens t shirt.png" alt="mens t shirt">
+      <img src="IMAGES/Men shoes.webp" alt="Men shoes">
+    </div>
+    <div class="carousel-item">
+      <img src="IMAGES/Women jeans.webp" alt="Women jeans" >
+      <img src="IMAGES/Women t shirt.webp" alt="Women t shirt"><br>
+      <img src="IMAGES/Women watch.webp" alt="Women watch">
+      <img src="IMAGES/Women bag.webp" alt="Women bag">
+    </div>
+    <div class="carousel-item ">
+      <img src="IMAGES/Mutton Biryani.jpg" alt="Mutton Biryani" >
+      <img src="IMAGES/dosa.jpg" alt="dosa"><br>
+      <img src="IMAGES/Kadai panneer.jpeg" alt="Kadai panneer">
+      <img src="IMAGES/Coffee.webp" alt="Coffee">
+    </div>
+    <div class="carousel-item ">
+      <img src="IMAGES/Harry Potter.avif" alt="Harry Potter">
+      <img src="IMAGES/Sherlock Holmes.jpg" alt="Sherlock Holmes"><br>
+      <img src="IMAGES/Engineering Physics.jpg" alt="Engineering Physics">
+      <img src="IMAGES/English Grammar.webp" alt="English Grammar">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+
+<div id="flexOutput"></div>
+<div id="finalBill"></div>
+
+<script src="MyApp.js/MyApp.js"></script>
+
+
+
+
+</body>
+</html>

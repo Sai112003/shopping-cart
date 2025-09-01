@@ -1,0 +1,199 @@
+[
+{
+"filter_id":1,
+"products":[{
+             "product_id":10,
+             "product_name":"Ceiling Fan",
+             "imgSrc":"IMAGES/ceiling fan.webp",
+             "price":5000
+             },
+             {
+             "product_id":11,
+             "product_name":"Electric Cooker",
+             "imgSrc":"IMAGES/cooker.webp",
+             "price":3500
+             },
+             {
+             "product_id":13,
+             "product_name":"Iron Box",
+             "imgSrc":"IMAGES/iron box.png",
+             "price":500
+             },
+             {
+             "product_id":14,
+             "product_name":"TV",
+             "imgSrc":"IMAGES/tv.webp",
+             "price":6000
+             },
+             {
+             "product_id":15,
+             "product_name":"Vacuum Cleaner",
+             "imgSrc":"IMAGES/vacuum cleaner.png",
+             "price":500
+             },
+             {
+             "product_id":16,
+             "product_name":"Washing Machine",
+             "imgSrc":"IMAGES/washing machine,jpg",
+             "price":1000
+             }]
+ },
+ {
+ "filter_id":2,
+ "products":[{
+            "product_id":17,
+            "product_name":"Men Jacket",
+            "imgSrc":"images/Jacket.jpg",
+            "price":3000
+            },
+            {
+            "product_id":18,
+            "product_name":"Full hand T Shirt",
+            "imgSrc":"images/Full_hand_t_shirt.webp",
+            "price":1999
+            },
+            {
+            "product_id":19,
+            "product_name":"Men Jeans",
+            "imgSrc":"images/Jeans_men.avif",
+            "price":1500
+            },
+            {
+            "product_id":20,
+            "product_name":"Casual pants",
+            "imgSrc":"images/casual_men.webp",
+            "price":600
+            },
+            {
+            "product_id":21,
+            "product_name":"Men shoes",
+            "imgSrc":"images/Mens_shoes.webp",
+            "price":999
+            },
+            {
+            "product_id":22,
+            "product_name":"Men Watch",
+            "imgSrc":"images/Mens_Watch.jpg",
+            "price":3000
+            }]
+            
+ },
+ {
+ "filter_id":3,
+ "products":[{
+             "product_id":23,
+             "product_name":"Women Jeans",
+             "imgSrc":"images/Womens_jeans.webp",
+             "price":600
+             },
+             {
+             "product_id":24,
+             "product_name":"Women T Shirt",
+             "imgSrc":"images/Womens_t_shirt.webp",
+             "price":500
+             },
+             {
+             "product_id":25,
+             "product_name":"Women Salwar",
+             "imgSrc":"images/Salwar.webp",
+             "price":1000
+             },
+             {
+             "product_id":26,
+             "product_name":"Women Watch",
+             "imgSrc":"images/Womens_watch.jpg",
+             "price":3000
+             },
+             {
+             "product_id":27,
+             "product_name":"Heels",
+             "imgSrc":"images/High_heels.avif",
+             "price":1500
+             },
+             {
+             "product_id":28,
+             "product_name":"Women Bag",
+             "imgSrc":"images/Womens_bag.webp",
+             "price":600
+             }]
+ },
+ {
+ "filter_id":4,
+ "products":[{
+              "product_id":29,
+              "product_name":"Mutton Biryani",
+              "imgSrc":"images/Biryani.webp",
+              "price":399
+              },
+              {
+              "product_id":30,
+              "product_name":"Dosa",
+              "imgSrc":"images/Plain-Dosa.webp",
+              "price":150
+              },
+              {
+              "product_id":31,
+              "product_name":"Chappathi",
+              "imgSrc":"images/Chappathi.webp",
+              "price":150
+              },
+              {
+              "product_id":32,
+              "product_name":"Kadai Panneer",
+              "imgSrc":"images/Kadai_panneer.jpg",
+              "price":399
+              },
+              {
+              "product_id":33,
+              "product_name":"Coca Cola",
+              "imgSrc":"images/Coca_Cola.avif",
+              "price":399
+              },
+              {
+              "product_id":34,
+              "product_name":"Coffee",
+              "imgSrc":"images/Coffee.webp",
+              "price":60
+              }]
+ },
+ {
+ "filter_id":5,
+ "products":[{
+              "product_id":35,
+              "product_name":"Harry Potter",
+              "imgSrc":"images/Harry_Potter.jpg",
+              "price":100
+              },
+              {
+              "product_id":36,
+              "product_name":"Nancy Drew",
+              "imgSrc":"images/Nancy_Drew.jpg",
+              "price":199
+              },
+              {
+              "product_id":37,
+              "product_name":"Sherlock Holmes",
+              "imgSrc":"images/Sherlock_holmes.jpg",
+              "price":499
+              },
+              {
+              "product_id":38,
+              "product_name":"Engineering Maths",
+              "imgSrc":"images/Engineering_maths.jpg",
+              "price":499
+              },
+              {
+              "product_id":39,
+              "product_name":"Engineering Physics",
+              "imgSrc":"images/Eng_physics.jpg",
+              "price":399
+              },
+              {
+              "product_id":40,
+              "product_name":"English Grammar",
+              "imgSrc":"images/English_grammer.webp",
+              "price":399
+              }]
+ 
+}
+]
